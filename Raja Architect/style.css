@@ -1,0 +1,278 @@
+*{
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+li{
+    list-style-type: none;
+}
+
+/*background picture below Nav bar*/
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/bg4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.header h1{
+    align-content: center;
+}
+
+body > .header{
+    text-align: center;
+    font-size: 70px;
+    padding: 250px 0px 0px 0px;
+    color: white;
+    font-weight: 900;
+
+}
+
+.Container{
+    background-color: whitesmoke;
+    padding: 100px 240px 200px;
+}
+
+#Container-p{
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0.7px;
+}
+
+#Container-p2{
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 29px;
+}
+
+.Information-1{
+    padding: 250px;
+    text-align: center;
+}
+
+.Information-1 > p{
+    font-size: 22px;
+    letter-spacing: 1.7px;    
+}
+
+#I1-image{
+    width: 110px;
+    height:110px;
+}
+
+/*video*/
+iframe{
+    height: 100vh;
+    width: 100%;
+}
+/*video*/
+
+/*Container-slideshow*/
+.Container-slideshow{
+    margin: 0 150px 150px 150px;
+    background-color: whitesmoke;
+}
+
+.Container-slideshow p{
+    font-size: 28px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.Container-slideshow , .slideshow-title{
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+/*Container-slideshow ends*/
+
+
+/*Footer bar*/
+footer{
+    margin-bottom: 0px;
+    background-color: rgba(24, 21, 21, 1.66);
+    color: whitesmoke;
+    padding: 100px;
+    font-size: 17px;
+}
+
+.footer-name{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.footer-name{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    color: whitesmoke;
+    letter-spacing: 6.5px;
+}
+
+.footer-name:hover{
+    color: darkgrey;
+    text-decoration: none;
+}
+
+.footer-line{
+    border:  1.5px solid whitesmoke;
+}
+
+.footer-details{
+    margin-left: 30px;
+}
+
+.quotes{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: black;
+    color: whitesmoke;
+    letter-spacing: 3.5px;
+}
+
+.span-logo{
+    float: right;
+    margin-right: 30px;
+    transition: all 0.7s;
+}
+
+.social-media-icon{
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid whitesmoke;
+}
+
+.social-media-icon1{
+    width: 77px;
+}
+
+.span-logo:hover{
+    transform: scale(1.1);
+}
+
+.footer-details a{
+    color: whitesmoke;
+}
+
+.footer-details a:hover{
+    color: grey;
+    text-decoration: none;
+}
+
+/*Footer bar Ends*/
+
+
+/*Gallery page*/
+.gallery-title{
+    text-align: center;
+    margin-bottom:50px;
+    margin-top: 50px;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.gallery-img{
+    width: 450px;
+    height: 300px;
+    margin: 17px;
+    border: 1px solid black;
+    transition: all 1s;
+}
+
+.gallery-img:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 5px 5px black;
+}
+/*Gallery page*/
+
+
+/*  */
+
+@media only screen and (max-width: 768px) {
+    body{
+        width: 855px;
+    }
+    
+    .header{
+        height: 110vh;
+    }
+
+    .Container{
+        padding: 200px;
+    }
+
+    .Information-1{
+        display: flex;
+        justify-content: center;
+        padding: 300px;
+    }
+
+    .Container-slideshow{
+      margin: 0;
+      padding-bottom: 40px;
+    }
+
+    .footer-details{
+        padding-bottom: 10px;
+    }
+
+    .footer-details{
+        display: none;
+    }
+
+    /* gallery  */
+    .gallery-img{
+        border: 1px solid black;
+        transition: all 1s;
+    }
+    
+    .gallery-img:hover{
+        transform: scale(1.04);
+        box-shadow: 1px 5px 5px black;
+    }
+    /* gallery */
+
+    .about{
+        padding: 0;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        width: 1100px;
+    }
+
+    .header{
+        height: 80vh;
+    }
+
+    .Container{
+        padding: 100px;
+    }
+
+    .Information-1{
+        padding: 300px;
+    }
+
+    .footer-details{
+        display: flex;
+    }
+       
+}
